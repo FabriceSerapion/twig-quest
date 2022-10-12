@@ -15,9 +15,13 @@
 	</head>
 
 	<body>
-		{% block content %}
+		<nav>
 			{% include '_navbar.html.twig' %}
+		</nav>
+		{% block content %}
 			<h1>Bienvenue chez Passion Musique</h1>
 		{% endblock %}
+		<footer>{% include '_footer.html.twig' %}</footer>
+
 	</body>
 </html>
