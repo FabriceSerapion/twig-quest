@@ -1,9 +1,10 @@
-{% extends "home.html.twig" %}
+{% extends "layout.html.twig" %}
 
 {% block title %}Liste des produits
 {% endblock %}
 
-{% block body %}
+{% block content %}
+	{{ parent() }}
 	<h1>Liste des produits</h1>
 	{% for product in products %}
 		<h2>{{product}}</h2>
